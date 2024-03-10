@@ -1,8 +1,11 @@
+HTML -> Hyper text Markup Language
+
 Shortcut
 
 Shift + 1 then Tabs -> Generates html page
 
-<!DOCTYPE html> -> Document type HTML
+"<!DOCTYPE html>" -> Document type HTML
+
 <html lang="en"> -> html page with language english
 
 Header Tag
@@ -16,6 +19,7 @@ Header Tag
 <body> -> Represents body of the page
 
 Header elements based on different fontsize.
+
 <h1>This is Heading 1</h1>
 <h2>This is Heading 1</h2>
 <h3>This is Heading 1</h3>
@@ -26,6 +30,13 @@ Header elements based on different fontsize.
 Paragraph
 
 <p>Lorem</p>
+<p title="Lorem"></p> <!--title shows the mouse hover tooltip -->
 
 Shortcut
 Type Lorem then number(Lorem50) then press TAB, this will generate 50 characters of Lorem
+
+a tag element
+contains href link to rerout the page on click of a text
+<a href="https://www.google.com">Google</a>
+
+<!-- Unordered List -->
