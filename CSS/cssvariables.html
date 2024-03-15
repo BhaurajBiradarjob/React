@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable</title>
+    <style>
+        :root{
+            --red : #ff0000;
+            --green : #00ff00;
+            --blue:#0000ff;
+            --fontsize:25px
+        }
+        body{
+            background-color: var(--red);
+        }
+        .container{
+            color: var(--green);
+            font-size: var(--fontsize);
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS Variables can be defined using the prefix -- followed by name
+    we can define variable globally inside the :root pseudo class selector
+
+    CSS variables can be accessible throughout application
+    -->
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque blanditiis inventore nulla 
+            molestiae, aut aliquam delectus ad nemo aspernatur? Laborum illo reiciendis veritatis. 
+            Saepe odio itaque numquam ut excepturi earum perferendis deserunt ipsam?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis cupiditate temporibus 
+            tempore voluptatum recusandae vero cumque architecto nobis delectus!</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eius quisquam debitis rerum, 
+            accusantium quam!</p>
+    </div>
+</body>
+</html>
