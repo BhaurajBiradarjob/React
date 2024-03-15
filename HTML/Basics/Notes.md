@@ -40,6 +40,7 @@ HTML paragraphs are defined with the <p>
 <p>This is another paragraph.</p>
 
 The title attribute defines some extra information about an element
+title is a tooltip
 
 <p title="I'm a tooltip">This is a paragraph.</p>
 
@@ -59,6 +60,7 @@ The href attribute specifies the URL of the page
 HTML images are defined with the <img> tag.
 The source file (src), alternative text (alt), width, and height are provided as attributes:
 <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+alternative text (alt) -> When image is not loading this text will be visible
 
 There are two ways to specify the URL in the src attribute:
 
@@ -76,3 +78,5 @@ The alt attribute of <img> provides an alternate text for an image
 The style attribute is used to add styles to an element, such as color, font, size, and more
 The lang attribute of the <html> tag declares the language of the Web page
 The title attribute defines some extra information about an element
+
+<br> tag defines a line break and is an empty element without a closing tag
