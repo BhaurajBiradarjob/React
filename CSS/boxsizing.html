@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Sizing</title>
+    <style>
+        /* "*{" indicates universal styling  */
+        *{
+            box-sizing: border-box;/* create box*/
+            overflow: auto; /* autoscroll when box overflows*/
+        }
+        .d1{
+            width: 300px;
+            height: 150px;
+            border: 2px solid red;
+        }
+        .d2{
+            width: 300px;
+            height: 150px;
+            border: 2px solid green;
+            padding: 50px;            
+        }
+    </style>
+</head>
+<body>
+<!--    
+    Box sizing used to control how the total width and height of element are calculated
+    including content, padding and border.
+    border-box property is commenly used in modern web development because it simplifies
+    layout calculations, which is particularly useful when working with responsive design and when 
+    we want to ensure the specified with include padding and border. It helps to avoid unexpected 
+    layout issues when dealing with different box dimensions.
+-->
+
+    <div class="d1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error adipisci ipsum molestiae beatae 
+        quia sit ducimus veniam autem voluptatibus.
+    </div>
+
+    <div class="d1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error adipisci ipsum molestiae beatae
+        quia sit ducimus veniam autem voluptatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error adipisci ipsum molestiae beatae
+        quia sit ducimus veniam autem voluptatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error adipisci ipsum molestiae beatae
+        quia sit ducimus veniam autem voluptatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error adipisci ipsum molestiae beatae
+        quia sit ducimus veniam autem voluptatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error adipisci ipsum molestiae beatae
+        quia sit ducimus veniam autem voluptatibus.
+    </div>
+</body>
+</html>
