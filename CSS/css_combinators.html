@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinator</title>
+    <style>
+        /* h2+p{
+            background-color: yellow;
+            color: violet;
+        } */
+        /* h2~p{
+            background-color: yellow;
+            color: violet;
+        } */
+        /* div>p{
+            background-color: yellow;
+            color: violet;
+        } */
+        div p{
+            background-color: yellow;
+            color: violet;
+        } 
+    </style>
+</head>
+<body>
+    <!---
+    A CSS selector can contain more than one simple selector, between the simple
+    selector, we can include combinator.
+
+    There are 4 types of combinators
+    1. Adjacent Sibling Selector
+    2. Child selector
+    3. general Sibling selector
+    4. Descendant Selector
+    -->
+
+    <!--
+        Adjacent Sibling Selector (+)
+
+        this selctor is used to select an element that is directly after another specific
+        element
+
+        Adjacent - Immediately following
+    -->
+
+    <!-- <div>
+        <h2>Heading 2</h2>
+        <p> Paragraph 1</p>
+        <h2>Heading 2 part 1</h2>
+        <h3>Heading 3</h3>
+        <p>Paragraph 2</p>
+        <h2>Heading 2 part 2</h2>
+        <p> Paragraph 2</p>
+    </div> -->
+
+    <!-- general Sibling selector(~)
+    
+        This selector selects all elements that are next siblings of a specified elements
+    -->
+    <!-- <div>
+        <h2>Heading 2</h2>
+        <p> Paragraph 1</p>
+        <h2>Heading 2 part 1</h2>
+        <h3>Heading 3</h3>
+        <p>Paragraph 2</p>
+        <h2>Heading 2 part 2</h2>
+        <p> Paragraph 3</p>
+    </div>
+    <p> Paragraph 5</p>
+    <p> Paragraph 6</p>
+    <h2>Heading 3 part 1</h2>
+    <h3>Heading 4</h3> -->
+
+    <!-- 
+        Child selector(>)
+
+        This selector selects all elements that are children of a specified element
+    -->
+    <!-- <div>
+        <h2>Heading 2</h2>
+        <p> Paragraph 1</p>
+        <h2>Heading 2 part 1</h2>
+        <h3>Heading 3</h3>
+        <p>Paragraph 2</p>
+        <h2>Heading 2 part 2</h2>
+        <p> Paragraph 3</p>
+    </div>
+    <p> Paragraph 5</p>
+    <p> Paragraph 6</p>
+    <h2>Heading 3 part 1</h2>
+    <h3>Heading 4</h3> -->
+
+    <!-- 
+        Descendant(Space )
+
+        This selector matches all elements that are descendant of a specified element
+    -->
+<div>
+    <h2>Heading 2</h2>
+    <p> Paragraph 1</p>
+    <h2>Heading 2 part 1</h2>
+    <h3>Heading 3</h3>
+    <p>Paragraph 2</p>
+    <h2>Heading 2 part 2</h2>
+    <p> Paragraph 3</p>
+</div>
+<p> Paragraph 5</p>
+<p> Paragraph 6</p>
+<h2>Heading 3 part 1</h2>
+<h3>Heading 4</h3>
+</body>
+</html>
