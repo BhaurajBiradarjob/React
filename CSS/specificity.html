@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifity</title>
+    <style>
+        /* InlineCSS > ID > class > Element > Universal selector */
+        *{
+            color: coral;
+        }
+        h2{
+            color: green;
+        }
+        p{
+            color: blue;
+        }
+        div{
+            color: blueviolet;
+        }
+        h1{
+            color: red;
+        }
+        .p1{
+            color: magenta;
+        }
+        .d1{
+            color: yellowgreen;
+        }
+        #idp1{
+            color:cyan
+        }
+        #idd1{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Specifity</h2>
+    <p class="p1" id="idp1" style="color: fuchsia;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Aliquid quo modi esse sapiente a maxime aperiam neque provident, 
+        numquam, quasi, ipsam porro facere! Sit nam tempora eaque veritatis, 
+        reprehenderit iusto?
+    </p>
+    <div class="d1" id="idd1" style="color:dodgerblue">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Aliquid quo modi esse sapiente a maxime aperiam neque provident,
+        numquam, quasi, ipsam porro facere! Sit nam tempora eaque veritatis,
+        reprehenderit iusto?
+    </div>
+    <h2>
+        Lorem, ipsum.
+    </h2>
+    <h1>
+        Lorem, ipsum.
+    </h1>
+</body>
+</html>

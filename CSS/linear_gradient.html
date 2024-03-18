@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        .grad1{
+            height: 200px;
+            background-image: linear-gradient(green,red);
+        }
+        .grad2{
+            height: 200px;
+            background-image: linear-gradient(to right, green,red);
+        }
+        .grad3{
+            height: 200px;
+            background-image: linear-gradient(to bottom right, green,red);
+        }
+        .grad4{
+            height: 200px;
+            background-image: linear-gradient(180deg, green,red);
+        }
+        .grad5{
+            height: 200px;
+            background-image: linear-gradient(
+                green, red, blue, yellow, pink, black, fuchsia, dodgerblue
+            );
+        }
+        .grad6{
+            height: 200px;
+            background-image: linear-gradient(
+                to right, green, red, blue, yellow, pink, black, fuchsia, dodgerblue
+            );
+        }
+        .grad7{
+            height: 200px;
+            background-image: linear-gradient(
+                to right, rgba(255,0,0,0), rgba(255,0,0,1)
+            );
+        }
+        .grad8{
+            height: 200px;
+            background-image: repeating-linear-gradient(
+                red, white,green, yellow,blue
+            );
+        }
+    </style>
+</head>
+<body>
+    <h1>Linear Gradient - Top to Bottom</h1>
+    <div class="grad1"></div>
+    <br/><br /><br />
+
+    <h1>Linear Gradient - Left to Right</h1>
+    <div class="grad2"></div>
+    <br /><br /><br />
+
+    <h1>Linear Gradient - Diagonal</h1>
+    <div class="grad3"></div>
+    <br /><br /><br />
+
+    <h1>Linear Gradient - Angles</h1>
+    <div class="grad4"></div>
+    <br /><br /><br />
+
+    <h1>Linear Gradient - Multiple Colors</h1>
+    <div class="grad5"></div>
+    <br /><br /><br />
+
+    <h1>Linear Gradient - Rainbow Colors</h1>
+    <div class="grad6"></div>
+    <br /><br /><br />
+
+    <h1>Linear Gradient - Transparency</h1>
+    <div class="grad7"></div>
+    <br /><br /><br />
+
+    <h1>Linear Gradient - Repeating</h1>
+    <div class="grad8"></div>
+    <br /><br /><br />
+</body>
+</html>

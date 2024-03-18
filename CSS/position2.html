@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative and Absolute</title>
+    <style>
+        .parent1{
+            border:3px dotted black;
+            display: inline-block;
+        }
+        .box{
+            display: inline-block;
+            background-color: red;
+            width: 120px;
+            height: 120px;
+        }
+        .two{
+            display: relative;
+            background-color: green;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- position : relative-->
+    <div class="parent1">
+        <div class="one box">One</div>
+        <div class="two box">Two</div>
+        <div class="three box">Three</div>
+        <div class="four box">Four</div>
+    </div>
+</body>
+</html>

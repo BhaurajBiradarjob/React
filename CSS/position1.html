@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative and Absolute</title>
+    <style>
+        /* .relative-box{
+            position: relative;
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            top: 80px;
+            left: 80px;
+        } */
+        .container{
+            position: relative;
+            height: 300px;
+            background-color: red;
+        }
+        .absolute-box{
+            position: absolute;
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            top: 80px;
+            left: 90px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Relative position
+
+        When we set an element's position to relative, it is positioned relative
+        to its normal position in the normal flow.
+
+        position: relative it means it will be positioned relative to its normal position
+    -->
+    <!--Example 1-->
+    <!-- <div class="relative-box">Relative Box</div> -->
+    <!--
+        position absolute
+
+        When we set an elements position to absolute, it is positioned relative to its
+        nearest ancestor or the initial containing block if no position ancestor is found.
+
+        These positioned techniques are used for creating layout and positioning element
+        in a web page
+    -->
+    <!--Example 2-->
+    <div class="container">
+        <div class="absolute-box">Absolute box</div>
+    </div>
+</body>
+</html>
