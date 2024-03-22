@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Pseudo</title>
+    <style>
+        .menu-select div{
+            border: 3px solid blue;
+            display: none;
+            color: white;
+            padding: 0px 8px 8px;
+            border-radius: 12px;
+        }
+        .menu-select a{
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 10px;
+            margin: 20px 0px;
+        }
+        .menu-select div:target{
+            display: block;
+            margin-top: 2px;
+            padding: auto;
+            color: black;
+            background-color: brown;
+        }
+        span{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h2>Target Pseudo Example</h2>
+    <div class="menu-select">
+        <a href="#js">Javascript</a><br/>
+        <a href="#dart">DART</a><br />
+        <div id="js">
+            <p>
+                <span>JavaScript</span> is OOPS language
+            </p>
+        </div>
+        <div id="dart">
+            <p>
+                <span>DART</span> is OOPS language
+            </p>
+        </div>
+    </div>
+</body>
+</html>

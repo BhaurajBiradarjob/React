@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position Relative and Absolute</title>
     <style>
-        .parent1{
+        /* .parent1{
+            border:3px dotted black;
+            display: inline-block;
+        } */
+        .parent2{
             border:3px dotted black;
             display: inline-block;
         }
@@ -15,8 +19,8 @@
             width: 120px;
             height: 120px;
         }
-        .two{
-            display: relative;
+        #two{
+            position: absolute; /*absolute, relative, fixed*/
             background-color: green;
             top: 20px;
             left: 20px;
@@ -24,12 +28,30 @@
     </style>
 </head>
 <body>
-    <!-- position : relative-->
-    <div class="parent1">
-        <div class="one box">One</div>
-        <div class="two box">Two</div>
-        <div class="three box">Three</div>
-        <div class="four box">Four</div>
+    <!-- position : relative
+    
+
+
+    -->
+    <!-- <div class="parent1">
+        <div class="box" id="one">One</div>
+        <div class="box" id="two">Two</div>
+        <div class="box" id="three">Three</div>
+        <div class="box" id="four">Four</div>
+    </div> -->
+
+    <!-- position : absolute
+        
+        By applying position absolute, it will not leave any gap where it would have been.
+        The position of the green box is based on its parent position which moves 20px
+        from the left and bottom from the top left origin to the dotted border
+    
+    -->
+    <div class="parent12">
+        <div class="box" id="one">One</div>
+        <div class="box" id="two">Two</div>
+        <div class="box" id="three">Three</div>
+        <div class="box" id="four">Four</div>
     </div>
 </body>
 </html>

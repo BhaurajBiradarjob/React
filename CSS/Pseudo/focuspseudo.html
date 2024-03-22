@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus</title>
+    <style>
+        div{
+            padding: 25px;
+        }
+        .focusclass{
+            width: 300px;
+            margin: 5px 21px;
+            background-color: dodgerblue;
+            color: white;
+            font-weight: 700;
+            border: 2px solid red;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        .focusclass:focus{
+            border: 8px solid white;
+            box-shadow: 0 0 10px black, 0 0 20px green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#" class="focusclass">Focus</a>
+    </div>
+</body>
+</html>

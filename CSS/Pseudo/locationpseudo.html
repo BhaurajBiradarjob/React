@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Pseudo class</title>
+    <style>
+        p:target{
+            background-color: tomato;
+            color: white;
+            border: 2px solid blue;
+            border-radius: 5px;
+        }
+        p:target span{
+            background-color: rgb(31, 28, 27);
+            color: white;
+            border: 2px solid rgb(228, 228, 235);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Location pseudo class
+    -->
+    <div>
+        <h2> Links to be selected</h2>
+        <a href="link1.html">Link 1</a><br/>
+        <a href="link2.html">Link 2</a><br />
+        <a href="#para1">Target 1st paragraph</a><br />
+        <a href="#para2">Target 2nd paragraph</a><br />
+        <a href="#para3">Target 3rd paragraph</a><br />
+        <a href="#para4">Target 4th paragraph</a><br />
+    </div>
+
+    <section>
+        <h2>Links tobe targeted</h2>
+        <p id="para1">This is <span>Paragraph 1</span></p>
+        <p id="para2">This is <span>Paragraph 2</span></p>
+        <p id="para3">This is <span>Paragraph 3</span></p>
+        <p id="para4">This is <span>Paragraph 4</span></p>
+    </section>
+</body>
+</html>

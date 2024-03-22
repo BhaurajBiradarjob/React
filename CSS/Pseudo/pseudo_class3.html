@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        :dir(rtl){
+            color: green;
+            font-size: 32px;
+        }
+        :lang(fr){
+            color: blue;
+        }
+        :lang(en){
+            color: yellow;
+        }
+        :dir(ltr){
+            color: red;
+            font-size: 32px;
+        }
+
+    </style>
+</head>
+<body>
+<!-- 
+    When we use both the dir and lang attribute together, we are providing
+    additional information to the browser about both the language and the text
+    directionality of the content within an element
+-->
+
+    <h2>Linguistic Pseudo class</h2>
+    <div dir="rtl" lang="fr">
+        <span>This is right hand side</span>
+    </div>
+<!--
+    For language written left to right like English, we don't need to use dir
+    attribute as browser assume left to right directionality by default.
+-->
+    <div dir="ltr" lang="en">
+        <span>This is left hand side</span>
+    </div>
+
+    <!--
+        By using both attributes together, we ensures that the browser correctly renders
+        the Arabic text with the appropriate right to left layout
+    -->
+</body>
+</html>

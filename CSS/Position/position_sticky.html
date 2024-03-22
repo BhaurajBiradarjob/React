@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position:sticky</title>
+    <style>
+        .navbar{
+            background-color: red;
+            color: white;   
+            font-size: 40px;
+            position: sticky;
+            top: 0;
+        }
+        div{
+            border: 5px solid blue;
+            background-color: burlywood;
+            margin-top: 40px;
+        }
+        .one{
+            background-color: blue;
+            color: white;
+        }
+        .two{
+            background-color: yellow;
+            color: white;
+        }
+        .container{
+            background-color: dodgerblue;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h2> Position:Sticky</h2>
+
+    <div>
+        <p class="one">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis quibusdam, officiis praesentium aliquid libero eum.
+            Tempore laudantium id autem quidem.
+        </p>
+        <p class="two">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis quibusdam, officiis praesentium aliquid libero eum.
+            Tempore laudantium id autem quidem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis quibusdam, officiis praesentium aliquid libero eum.
+            Tempore laudantium id autem quidem.
+        </p>
+    </div>
+
+    <div class="navbar">NavBar</div>
+    <div class="container"></div>
+
+</body>
+</html>

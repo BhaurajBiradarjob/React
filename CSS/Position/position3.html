@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position:Fixed</title>
+    <style>
+        .nav{
+            background-color: fuchsia;
+            color: white;
+            font-size: 48px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            margin-top: 0px;
+        }
+        div{
+            border: 5px solid red;
+            background-color: yellow;
+            margin-top: 40px;
+        }
+        /*
+        vh represents viewport height, which is a unit of measurement used to represent the 
+        height, which is visible portion of the web pagein the browser window.
+        1 vh represents 1% of the height of the view port.        
+        
+        */
+
+        .container{
+            background-color: blue;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h2> Position:Fixed</h2>
+    <div class="nav">NavBar</div>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Blanditiis quibusdam, officiis praesentium aliquid libero eum. 
+            Tempore laudantium id autem quidem.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis quibusdam, officiis praesentium aliquid libero eum.
+            Tempore laudantium id autem quidem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis quibusdam, officiis praesentium aliquid libero eum.
+            Tempore laudantium id autem quidem.
+        </p>
+    </div>
+    <div class="container"></div>
+</body>
+</html>

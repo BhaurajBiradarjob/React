@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read only, Read Write Pseudo class</title>
+    <style>
+        input{
+            margin: 20px;
+            width: 30%;
+            border: 2px solid coral;
+            border-radius: 5px;
+        }
+        input:read-only{
+            background-color: brown;
+            border: 2px solid green;
+            color: white;
+            font-style: italic;
+        }
+        div{
+            margin: 20px;
+            padding: 25px;
+            background-color: dodgerblue;
+            color: white;
+            border: 4px solid green;
+            border-radius: 4px;
+            font-size: 18px;
+            width: 40%;
+        }
+        input, div:read-write{
+            background-color: blueviolet;
+            border: 4px solid red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Type here..." value="This is read only" readonly />
+    <input type="text" placeholder="Some text...."/>
+    <input type="text" placeholder="Some text...." />
+
+    <div></div>
+
+    
+</body>
+</html>

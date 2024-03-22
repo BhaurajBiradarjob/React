@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        h2{
+            text-align: center;
+            font-size: 32px;
+            color: aquamarine;
+        }
+        label{
+            font-size: 22px;
+            display: inline-block;
+            color: burlywood;
+        }
+        form{
+            margin: 0 auto;
+            width: 400px;
+            padding: 16px;
+            border: 2px solid burlywood;
+            border-radius: 16px;
+        }
+        form li+li{
+            margin-top: 16px;
+        }
+        ul{
+            list-style:none;
+        }
+        input{
+            font-size: 25px;
+        }
+        input:focus{
+            background-color: rgb(10, 10, 241);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form</h2>
+    <form>
+        <ul>
+            <li>
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name"/>
+            </li>
+            <li>
+                <label>Email:</label>
+                <input type="text" placeholder="Enter your email" />
+            </li>
+            <li>
+                <input type="submit"/>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
