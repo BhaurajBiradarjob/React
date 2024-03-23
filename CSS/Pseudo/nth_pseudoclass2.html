@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Pseudo class Ex 2</title>
+    <style>
+        div{
+            padding: 18px;
+        }
+        table{
+            width: 100%;
+            background-color: brown;
+            border-color: rgb(0, 0, 0);
+            color: white;
+        }
+        td{
+            width: 33%;
+            padding: 10px;
+        }
+        tr:nth-child(3){
+            background-color: green;
+            color: red;
+            font-weight: bold;
+        }
+        tr:nth-child(7){
+            background-color: rgb(18, 227, 18);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+        tr:nth-child(2n){
+            background-color: rgb(18, 227, 18);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Items</h1>
+
+    <div>
+        <table cellspacing="10px">
+            <tr>
+                <td>Item ID</td>
+                <td>Item Name</td>
+                <td>Item Price</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Apple</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Banana</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Item 1</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Banana 2</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Cherry</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>Item 4</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>107</td>
+                <td>Item 5</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>108</td>
+                <td>Item 8</td>
+                <td>700</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

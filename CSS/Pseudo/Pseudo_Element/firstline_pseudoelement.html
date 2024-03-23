@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Line Pseudo element</title>
+    <style>
+        span{
+            color: blue;
+            padding: 18px;
+            display: inline-block;
+        }
+        span::first-line{
+            color: yellow;
+        }
+
+        .firstline::first-line{
+            color: green;
+        }
+        .firstletter::first-letter{
+            color:red;
+            text-transform: uppercase;
+            font-size: 250%;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Differences between pseudo class and Pseudo element
+
+        Pseudo class: are used to style whole element
+        ex: element:pseudo class
+
+        pseudo element : are used to style the specific part of an element
+        ex: element :: pseudo element
+
+    -->
+
+    <div>
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, facilis. 
+            Rem hic commodi iste voluptas! Deserunt minus, ipsum, quis eos earum debitis
+             obcaecati rerum in ad unde a perspiciatis mollitia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, facilis.
+            Rem hic commodi iste voluptas! Deserunt minus, ipsum, quis eos earum debitis
+            obcaecati rerum in ad unde a perspiciatis mollitia.
+        </span>
+        <br/>
+        <br/>
+        <br />
+        <br />
+        <span class="firstline">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, facilis.
+            Rem hic commodi iste voluptas! Deserunt minus, ipsum, quis eos earum debitis
+            obcaecati rerum in ad unde a perspiciatis mollitia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, facilis.
+            Rem hic commodi iste voluptas! Deserunt minus, ipsum, quis eos earum debitis
+            obcaecati rerum in ad unde a perspiciatis mollitia.
+        </span>
+        <br />
+        <br />
+        <br />
+        <br />
+        <span class="firstletter">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, facilis.
+            Rem hic commodi iste voluptas! Deserunt minus, ipsum, quis eos earum debitis
+            obcaecati rerum in ad unde a perspiciatis mollitia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, facilis.
+            Rem hic commodi iste voluptas! Deserunt minus, ipsum, quis eos earum debitis
+            obcaecati rerum in ad unde a perspiciatis mollitia.
+        </span>
+
+    </div>
+</body>
+</html>

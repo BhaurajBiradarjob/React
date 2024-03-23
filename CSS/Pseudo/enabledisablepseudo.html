@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enable Disable Pseudo class</title>
+    <style>
+        label{
+            margin-left: 2px;
+            font-size: 16px;
+        }
+        input:disabled{
+            background-color: black;
+            color: yellowgreen;
+            border: 2px solid blue;
+            border-radius: 6px;
+            margin: 2px;
+            padding: 4px;
+        }
+        input:enabled{
+            background-color: rgb(103, 103, 97);
+            color: rgb(157, 127, 36);
+            border:2px solid rgb(86, 36, 44);
+            border-radius: 6px;
+            margin: 2px;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Please enter your name"/><br/><br />
+
+        <label>Last Name:</label>
+        <input type="text" placeholder="Please enter your last name"  value="Kumar" disabled/><br /><br />
+
+        <label>Email:</label>
+        <input type="text" placeholder="Please enter your email" /><br /><br />
+
+        <label>City:</label>
+        <input type="text" placeholder="Please enter your name" disabled/><br /><br />
+        <input type="submit"/>
+    </form>
+</body>
+</html>

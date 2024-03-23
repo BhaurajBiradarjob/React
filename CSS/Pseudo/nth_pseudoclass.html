@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Pseudo Class</title>
+    <style>
+        .container{
+            display: grid;
+            margin: 48px;
+            grid-template-columns: 160px 160px 160px;
+        }
+        .items{
+            background-color: blanchedalmond;
+            font-size: 32px;
+            padding: 30px 0;
+            margin: 5px;
+        }
+
+        .items:nth-child(1){
+            background-color: blue;
+            color: white;
+        }
+        .items:nth-child(2){
+            background-color: rgb(33, 195, 106);
+            color: white;
+        }
+        .items:nth-child(5){
+            background-color: rgb(207, 141, 18);
+            color: white;
+        }
+        .items:nth-child(8){
+            background-color: rgb(172, 152, 157);
+            color: white;
+        }
+        .items:nth-child(11){
+            background-color: rgb(52, 214, 60);
+            color: white;
+        }
+
+        .items:nth-child(even){
+            background-color: blue;
+            color: white;
+        }
+        .items:nth-child(odd){
+            background-color: rgb(119, 119, 131);
+            color: white;
+        }
+
+        /* n starts from 0*/
+        .items:nth-child(2n){
+            background-color: rgb(119, 119, 131);
+            color: white;
+        }
+        .items:nth-child(3n){
+            background-color: rgb(119, 119, 131);
+            color: white;
+        }
+        .items:nth-child(2n+1){
+            background-color: rgb(119, 119, 131);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">Item 1</div>
+        <div class="items">Item 2</div>
+        <div class="items">Item 3</div>
+        <div class="items">Item 4</div>
+        <div class="items">Item 5</div>
+        <div class="items">Item 6</div>
+        <div class="items">Item 7</div>
+        <div class="items">Item 8</div>
+        <div class="items">Item 9</div>
+        <div class="items">Item 10</div>
+        <div class="items">Item 11</div>
+        <div class="items">Item 12</div>
+    </div>
+</body>
+</html>

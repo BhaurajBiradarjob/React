@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Pseudo Element</title>
+    <style>
+        *{
+            font-size: 25px;
+        }
+        ::selection{
+            background-color: fuchsia;
+            color: white;
+        }
+        .p1::selection{
+            background-color: red;
+            color: white;
+        }
+        .div1::selection{
+            background-color: brown;
+            color: white;
+        }
+        .h2::selection{
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--
+
+        This pseudo element matches the portion of element that is selected by a user
+    -->
+    <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem eum ipsum animi 
+        obcaecati, repellendus ipsam. Ab, vero. Optio nulla voluptatibus vel ab dolore enim 
+        earum. Nisi, quam nam? At? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem eum ipsum animi
+        obcaecati, repellendus ipsam. Ab, vero. Optio nulla voluptatibus vel ab dolore enim
+        earum. Nisi, quam nam? At?
+    </p>
+
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem eum ipsum animi
+        obcaecati, repellendus ipsam. Ab, vero. Optio nulla voluptatibus vel ab dolore enim
+        earum. Nisi, quam nam? At?
+    </div>
+
+    <div class="h2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem eum ipsum animi
+        obcaecati, repellendus ipsam.
+    </div>
+</body>
+</html>

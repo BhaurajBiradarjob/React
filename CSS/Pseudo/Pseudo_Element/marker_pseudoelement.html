@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marker Pseudo element</title>
+    <style>
+        *{
+            font-size: 22px;
+        }
+        ::marker{
+            color: blue;
+        }
+        .ul1::marker{
+            color: green;
+        }
+        .ul2::marker{
+            color: yellow;
+        }
+        .ul3::marker{
+            color: blue;
+        }
+        .ul4::marker{
+            color: orange;
+        }
+        .ul1::marker{
+            color: red;
+        }
+        .ol1::marker{
+            color: green;
+        }
+        .ol2::marker{
+            color: yellow;
+        }
+        .ol3::marker{
+            color: blue;
+        }
+        .ol4::marker{
+            color: orange;
+        }
+        .ol1::marker{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        This pseudo element select the markers of list elements
+    -->
+
+    <ul>
+        <li class="ul1">Apple</li>
+        <li class="ul2">Orange</li>
+        <li class="ul3">Apple1</li>
+        <li class="ul4">Apple2</li>
+        <li class="ul5">Apple3</li>
+    </ul>
+    <br/>
+    <br/>
+    <ol>
+        <li class="ol1">Apple</li>
+        <li class="ol2">Orange</li>
+        <li class="ol3">Apple1</li>
+        <li class="ol4">Apple2</li>
+        <li class="ol5">Apple3</li>
+    </ol>
+</body>
+</html>
