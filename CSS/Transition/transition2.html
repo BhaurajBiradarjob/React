@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Example 2</title>
+    <style>
+        .a1{
+            display: inline-block;
+            text-decoration: none;
+            padding: 16px;
+            background-color: tomato;
+            color: #fff;
+            transition: background-color 2s;
+            transition: background-color 2s color 5s;
+            transition: all 2s;
+        }
+        .a1:hover{
+            background-color: green;
+            color: blue;
+        }
+        .a2{
+            display: inline-block;
+            text-decoration: none;
+            transition: all 5s;
+        }
+        .a2:hover{
+            background-color: teal;
+            color: white;
+            border:blue 8px dashed;
+            padding: 32px;
+            transform:translate(32px, 64px) ;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="a1">Home</a>
+    <br/><br />
+
+    <a href="#" class="a2">Home</a>
+</body>
+</html>

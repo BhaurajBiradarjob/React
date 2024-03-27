@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .d1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition: width 2s;
+        }
+        .d1:hover{
+            width: 500px;
+        }
+        .d2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: width 3s, height 6s;
+        }
+        .d2:hover{
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Transition allow us to change property value smoothly, over a given duration.
+
+        To create a effect, we must specify an effect which we want to add in css
+        property, duration of the effect.
+    -->
+    <h2>transition property(width)</h2>
+
+    <div class="d1"></div>
+    <br/><br /><br />
+
+    <h2>transition property(width + height)</h2>
+    <div class="d2"></div>
+</body>
+</html>
