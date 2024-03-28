@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .div1{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            animation-name: animation1;
+            animation-duration: 14s;
+            position: relative;
+            animation-delay: 4s; /* starting delay */
+            animation-delay: -4s;/* animation started 4s after */
+            animation-iteration-count: 3;/* iteration */
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-direction: alternate;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes animation1{
+            0%{
+                background-color: rgb(208, 44, 44);
+                left: 0;
+                top: 0;
+            }
+            25%{
+                background-color: blue;
+                left: 200px;
+                top: 0;
+            }
+            50%{
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+            75%{
+                background-color: brown;
+                left: 0px;
+                top: 200px;
+            }
+            100%{
+                background-color: rgb(7, 239, 7);
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Animation</h2>
+
+    <div class="div1"></div>
+</body>
+</html>

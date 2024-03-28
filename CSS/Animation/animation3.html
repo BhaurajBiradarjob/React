@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Example 3</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: animation1 6s infinite;
+            margin: 10px;
+        }
+        .linear{
+            background-color: green;
+            animation-timing-function: linear;
+        }
+       .ease{
+            background-color: blue;
+            animation-timing-function: ease;
+        }
+        .ease-in{
+            background-color: yellow;
+            animation-timing-function: ease-in;
+        }
+        .ease-out{
+            background-color: violet;
+            animation-timing-function: ease-out;
+        }
+        .ease-in-out{
+            background-color: brown;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes animation1 {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Animation </h2>
+    <div class="linear"></div>
+    <div class="ease"></div>
+    <div class="ease-in"></div>
+    <div class="ease-out"></div>
+    <div class="ease-in-out"></div>
+</body>
+</html>
