@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Html</title>
+    <style>
+        .notification{
+            background-color: blueviolet;
+            color: white;
+            padding: 15px 26px;
+            text-decoration: none;
+            position: relative;
+            border-radius: 4px;
+        }
+        .notification:hover{
+            opacity: 0.8;
+        }
+        .badge{
+            position:absolute;
+            background-color: red;
+            padding: 8px 12px;
+            border-radius: 50%;
+            right: -10px;
+            top:-10px
+        }
+        .badge:hover{
+            background-color: dodgerblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> Notification Example</h1>
+
+    <a href="#" class="notification">
+        <span>Message</span>
+        <span class="badge">6</span>
+    </a>
+</body>
+</html>

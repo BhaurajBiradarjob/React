@@ -1,0 +1,15 @@
+ul{
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    display: flex;
+}
+
+/* Flex Items */
+li{
+    list-style: none;
+    color: white;
+    background-color: dodgerblue;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+}
