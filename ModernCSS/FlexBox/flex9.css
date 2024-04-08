@@ -1,0 +1,33 @@
+ul{
+    background-color: dodgerblue;
+    padding: 20px;
+    display: flex;
+}
+li{
+    list-style: none;
+    background-color: dodgerblue;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Order (Default = 0)
+    value can be +ve or -ve number, values are located on the main-axis which is
+    horizontal(default), if the flow direction is row(default).
+    If the flex direction is column the main axis becomes vertical
+*/
+li:nth-child(3){
+    order: 5;
+}
+li:nth-child(1) {
+    order: 2;
+}
+li:nth-child(2) {
+    order: 3;
+}
+li:nth-child(8) {
+    order: -1;
+}
+li:nth-child(4) {
+    order: -2;
+}

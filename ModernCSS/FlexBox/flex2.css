@@ -1,0 +1,16 @@
+
+section{
+    width: 20rem;
+    padding: 1.5rem;
+    background-color: salmon;
+    color: white;
+    margin: 1rem;
+}
+.content{
+    background-color: dodgerblue;
+    padding: 1rem;
+}
+
+body {
+    display: flex;
+}

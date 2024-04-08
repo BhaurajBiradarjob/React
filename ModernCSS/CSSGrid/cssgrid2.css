@@ -1,0 +1,32 @@
+.item {
+    background-color: blue;
+}
+
+.grid-container {
+    background-color: orange;
+    /* Initializing a grid layout */
+    display: grid;
+
+    /* grid container properties */
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 250px 5rem;
+
+    /* repeat(rows/cols) */
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(3, 150px);
+
+    grid-gap: 25px;
+
+    /* fractional unit */
+    grid-template-columns: repeat(3, 150px) 1fr;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 3fr 4fr;
+    
+    grid-template-rows: 150px 1fr 50% 1fr;
+
+    height: 600px;
+
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px) 1fr;
+    grid-template-rows: repeat(2, 100px) 0.5fr;
+}

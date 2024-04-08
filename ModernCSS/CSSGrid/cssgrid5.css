@@ -1,0 +1,57 @@
+.grid-container{
+    background-color: coral;
+    display: grid;
+    grid-gap: 25px;
+
+    /* grid template areas */
+
+    /* Naming grid items can be referred by the grid-template-areas property
+        of the grid container */
+
+    grid-template-areas: 
+    "header header header header header header"
+    "sec-1 sec-1 sec-2 sec-2 sec-3 sec-3"
+    ". sec-4 sec-4 sec-4 sec-4 ."
+    "sec-5 sec-5 sec-5 sec-6 sec-6 sec-6"
+    "footer footer footer footer footer footer";
+}
+section,header,footer{
+    background-color: aqua;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150px;
+    letter-spacing: 3px;
+}
+
+.header{
+    background-color: blueviolet;
+    grid-area: header;
+}
+.item1{
+    background-color: blue;
+    grid-area: sec-1;
+}
+.item2 {
+    background-color: brown;
+    grid-area: sec-2;
+}
+.item3 {
+    background-color: cadetblue;
+    grid-area: sec-3;
+}
+.item4 {
+    background-color: chartreuse;
+    grid-area: sec-4;
+}
+.item5 {
+    background-color: darkgoldenrod;
+    grid-area: sec-5;
+}
+.item6 {
+    background-color: hotpink;
+    grid-area: sec-6;
+}
+.footer{
+    background-color: red;
+    grid-area: footer;
+}

@@ -1,0 +1,42 @@
+
+ul{
+    background-color: lightslategrey;
+    padding: 20px;
+    display: flex;
+
+    /* Justify Content */
+    /*
+        Justify content property align the flex container items when
+        items do not use all available space on the main axis
+    */
+    /* Default Direction => Row => Main Axis => Horizontal */
+
+    /* Flex Start(Default) */
+    justify-content: flex-start;
+
+    /* Flex end */
+    justify-content: flex-end;
+
+    /* Flex center */
+    justify-content: center;
+
+    /* space between */
+    justify-content: space-between;
+
+    /* space around */
+    justify-content: space-around;
+
+    /* space evenly */
+    justify-content: space-evenly;
+
+}
+li {
+    list-style: none;
+    background-color: dodgerblue;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+}

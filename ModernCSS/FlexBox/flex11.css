@@ -1,0 +1,32 @@
+ul {
+    background-color: dodgerblue;
+    padding: 20px;
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    background-color: dodgerblue;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Align-Self*/
+
+/*auto(Default) => align according to parent's align item property value */
+
+li:nth-child(2){
+    align-self: flex-end;
+}
+li:nth-child(4) {
+    align-self: flex-start;
+}
+li:nth-child(3) {
+    align-self: center;
+}
+li:nth-child(1) {
+    align-self: baseline;
+}

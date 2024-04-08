@@ -1,0 +1,45 @@
+.grid-container {
+    background-color: coral;
+    display: grid;
+    border:6px solid red;
+
+    min-height: 100vh;
+
+    grid-template-columns: 1fr minmax(400px, 800px) 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.item {
+    padding: 2rem;
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+    border:6px solid green;
+    color:#fff;
+    font-size: 44px;
+}
+
+.item1 {
+    background-color: aqua;
+}
+
+.item2 {
+    background-color: aquamarine;
+}
+
+.item3 {
+    background-color: blue;
+}
+
+.item4 {
+    background-color: blueviolet;
+}
+
+.item5 {
+    background-color: brown;
+}
+
+.item6 {
+    background-color: burlywood;
+}

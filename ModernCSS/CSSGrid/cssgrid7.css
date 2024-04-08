@@ -1,0 +1,66 @@
+.grid-container {
+    background-color: coral;
+    display: grid;
+    grid-gap: 25px;
+
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 250px);
+}
+
+
+.item {
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.item1 {
+    background-color: aqua;
+    /*justidy-self*/
+    justify-self: start;
+    justify-self: center;
+    justify-self: end;
+}
+
+.item2 {
+    background-color: aquamarine;
+}
+
+.item3 {
+    background-color: blue;
+    /* align-self */
+    align-self: start;
+    align-self: center;
+    align-self: end;
+}
+
+.item4 {
+    background-color: blueviolet;
+}
+
+.item5 {
+    background-color: brown;
+}
+
+.item6 {
+    background-color: burlywood;
+    /*place-self*/
+    /* <align-self><justify-self> */
+    place-self: start;
+    place-self: end;
+    place-self: center;
+    place-self: start end;
+    place-self: start center;
+    place-self: center start;
+    place-self: center end;
+    place-self: end start;
+    place-self: end center;
+}
+
+.item7 {
+    background-color: hotpink;
+}
+
+.item8 {
+    background-color: chartreuse;
+}

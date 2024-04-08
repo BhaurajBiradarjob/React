@@ -1,0 +1,34 @@
+/* auto-fit only fits and auto-fill keeps creating */
+
+.container1{
+    border: 6px solid red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.container2{
+    border: 6px solid green;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.item {
+    padding: 2rem;
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+    border: 6px solid green;
+    color: #fff;
+    font-size: 44px;
+}
+
+.item1 {
+    background-color: aqua;
+}
+
+.item2 {
+    background-color: aquamarine;
+}
+
+.item3 {
+    background-color: blue;
+}
