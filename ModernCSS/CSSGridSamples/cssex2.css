@@ -33,3 +33,37 @@ body{
     width: 100%;
     object-fit: cover;
 }
+
+.product-grid_product-dept{
+    grid-row: 8/9;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: green;
+}
+.product-grid_product-name{
+    grid-column: 1/-1;
+    grid-row: 9/10;
+    font-size: 1.6rem;
+}
+.product-grid_product-price{
+    grid-column: 1/3;
+    grid-row: 10/11;
+    font-size: 1.5rem;
+}
+.product-grid_product-price span:first-child{
+    text-decoration: line-through;
+    color: blue;
+    font-weight: bold;
+}
+.product-grid_product-price span:last-child {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+.product-grid_product-discount{
+    grid-column: 3/4;
+    grid-row: 8/9;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
