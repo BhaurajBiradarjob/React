@@ -4,7 +4,7 @@
 */
 
 // Example 1
-// let fruits = [];
+// let fruits = []; // Empty
 // console.log(fruits);
 // console.log(typeof fruits);
 // fruits[0] = "Apple";
