@@ -144,17 +144,146 @@ When we declare a function as a property of an object, we can call this as a met
 // window is an object which represents the browser window in which the current script is
 // running. It is top level object in browser and provides several properties and
 // methods that allow to interact with the browser window
-// window.setTimeout(func, 1000); 
-window.alert("hello");
-window.prompt("What is your name?");
+// window.setTimeout(func, 1000);
+// window.alert("hello");
+// window.prompt("What is your name?");
 
-let result = window.confirm("Are you sure, you want to delete the item?");
+// let result = window.confirm("Are you sure, you want to delete the item?");
 
-if (result) {
-    console.log("deleted");
-}
-else {
-    console.log("Not deleted");
-}
+// if (result) {
+//     console.log("deleted");
+// }
+// else {
+//     console.log("Not deleted");
+// }
 
-window.open("https://www.bing.com", "_blank");
+// window.open("https://www.bing.com", "_blank");
+
+//this keyword
+//If we use this keyword in a method then this keyword points to owner of the object
+//If we use this keyword alone, then it points to the global object.
+//If we use this keyword in a function which is in strict mode, then we will get undefined
+//If we use this keyword in a function then this points to global object.
+//In case of DOM manipulation suppose inside the button if we use this keyword, then
+//this will point to the element which will receive the event.
+
+// console.log(this);
+
+// function fnc() {
+//     console.log(this);
+// }
+
+// fnc();
+// window.fnc();
+
+//use strict is a directive that tells the browser to execute the code in strict mode.
+//only const and let works with use strict mode
+
+// "use strict";
+// //x=35; console.log(x); we will get reference error
+// let x = 35;
+// console.log(x);
+
+
+// function fnc() {
+//     console.log(this); //Undefined
+// }
+// fnc();
+
+// let student = {
+//     firstName: "Raj",
+//     lastName: "K",
+//     age: 25,
+//     fullName: function () {
+//         return this.firstName + " " + this.lastName;
+//     },
+//     getfullName: function () {
+//         return this.fullName;
+//     }
+// }
+
+// console.log(student);
+// console.log(student.fullName());
+
+//Implicit binding
+//the value of this is determined by the object on which a function is invoked
+//when a function is called as a method of an object, the object before the
+//dot becomes this
+// let PersonFunction = function (obj) {
+//     obj.printPerson = function () {
+//         console.log(this.name);
+//     };
+// };
+
+// let suresh = {
+//     name : "Suresh",
+//     age : 44
+// };
+
+// let rakesh = {
+//     name : "Rakesh",
+//     age : 44
+// };
+
+// console.log(PersonFunction);
+
+// PersonFunction(suresh);
+// suresh.printPerson();
+
+// PersonFunction(rakesh);
+// rakesh.printPerson();
+
+// let Person = function (name, age) {
+//     return {
+//         name: name,
+//         age: age,
+//         printName: function () {
+//             console.log(this.name);
+//         },
+//         friend: {
+//             name: "Reema",
+//             printName: function () {
+//                 console.log(this.name);
+//             },
+//         },
+//     };
+// };
+
+// console.log(Person);
+// let suresh = Person("Suresh", 44);
+// let rakesh = Person("Rakesh", 54);
+
+// console.log(suresh);
+// suresh.printName();
+// console.log(rakesh);
+// rakesh.printName();
+
+// console.log(suresh.friend);
+// suresh.friend.printName();
+// rakesh.friend.printName();
+
+//Explicit Binding
+//in explicit binding, we can directly set the value of this using call(), apply()
+//and bind() methods
+
+//call()
+//the call() method calls a function with given this value and arguments provided
+//individually
+
+name1 = "Ramesh";
+let displayFunc = function () {
+    console.log(this.name1);
+};
+
+let suresh = {
+    name1: "Suresh",
+    age:44  
+};
+
+console.log(this);
+displayFunc.call(suresh); // this refers to owner of the object which is suresh object
+
+displayFunc.call(this);// as name is present in window object, this refers to the name
+//present in window object
+
+displayFunc.call(window);
