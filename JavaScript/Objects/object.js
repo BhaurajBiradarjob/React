@@ -270,20 +270,122 @@ When we declare a function as a property of an object, we can call this as a met
 //the call() method calls a function with given this value and arguments provided
 //individually
 
-name1 = "Ramesh";
-let displayFunc = function () {
-    console.log(this.name1);
+// name1 = "Ramesh";
+// let displayFunc = function () {
+//     console.log(this.name1);
+// };
+
+// let suresh = {
+//     name1: "Suresh",
+//     age:44
+// };
+
+// console.log(this);
+// displayFunc.call(suresh); // this refers to owner of the object which is suresh object
+
+// displayFunc.call(this);// as name is present in window object, this refers to the name
+// //present in window object
+
+// displayFunc.call(window);
+
+// let displayFunc = function (x,y) {
+//     console.log(this.name1);
+//     console.log(`${this.name1} is learning ${x} and ${y}`);
+// };
+
+// let suresh = {
+//     name1:"Suresh",
+//     age : 44
+// };
+// let ramesh = {
+//     name1:"Ramesh",
+//     age : 54
+// };
+// let a = "Java";
+// let b = "JavaScript";
+// displayFunc.call(suresh, a, b);
+// displayFunc.call(ramesh, "Flutter", "Dart");
+
+// apply method -> accepts array parameter
+// displayFunc.apply(suresh, [a, b]);
+// displayFunc.apply(ramesh, "Flutter", "Dart");
+
+//bind -> will return new function
+// let newFunc = displayFunc.bind(ramesh, "Flutter", "Dart");
+// newFunc();
+
+// let newFunc1 = displayFunc.bind(suresh, ["Flutter", "Dart"]);
+// newFunc1();
+
+// let person = {
+//     fullName: function (age, city) {
+//         return `First Name:${this.firstName} \n
+//                 Last Name:${this.lastName} \n
+//                 Age:${age} \n
+//                 city:${city}`
+//     }
+// };
+
+// let person1 = {
+//     firstName: "Bhauraj",
+//     lastName: "Biradar"
+// };
+
+// let person2 = {
+//     firstName: "Mahesh",
+//     lastName: "Biradar"
+// };
+
+// console.log(person.fullName());
+
+// let fullName = person.fullName.call(person1, 34, "Mumbai");
+// console.log(fullName);
+
+// let fullName2 = person.fullName.apply(person1, [34, "Mumbai"]);
+// console.log(fullName2);
+
+
+// let fullName3 = person.fullName.bind(person1, 34, "Mumbai");
+// console.log(fullName3());
+
+//new keyword creates object of function
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     console.log(this);
+//     console.log(`Name:${this.name} Age:${this.age}`);
+// }
+
+// let suresh = new Person("Mahesh", 34);
+// console.log(suresh);
+// console.log(Person);
+// console.log(Person.prototype.constructor);
+
+//window() binding
+// name = "Bhauraj";
+// var displayFunc = function () {
+//     console.log(this);
+//     console.log(this.name);
+// };
+
+// displayFunc();
+// window.displayFunc();
+// console.dir(displayFunc);
+
+//The below code this inside the call back function is pointing to window, so to
+//fix this problem we can solve in different ways.
+let javaScript = {
+    name1: "JavaScript",
+    framework: ["Angular", "Vue"],
+    printFramework: function () {
+        console.log(this);
+        this.framework.forEach(function (framework) {
+            console.log(this);
+            console.log(`${this.name1} loves ${framework}`);
+        }
+        );
+    },
 };
 
-let suresh = {
-    name1: "Suresh",
-    age:44  
-};
-
-console.log(this);
-displayFunc.call(suresh); // this refers to owner of the object which is suresh object
-
-displayFunc.call(this);// as name is present in window object, this refers to the name
-//present in window object
-
-displayFunc.call(window);
+javaScript.printFramework();
+//tobe continued..
